@@ -1,0 +1,111 @@
+.container {
+    width: 95%;
+    height: auto;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+
+.container nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 8px 0px;
+    font-size: 2rem;
+    background-color: #eed8ea;
+    border-bottom: 2px solid #484848;
+}  
+.container nav .logo {
+    padding: 0 0 0 20px;
+}
+.container nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+}
+  
+.container nav ul li {
+    padding: 5px 20px;
+    text-align: center;
+}
+  
+.container nav ul li a {
+    color: #484848;
+    padding: 2px;
+    text-decoration: none;
+}
+  
+.container nav ul li a:hover {
+    border-bottom: 2px solid #262626;
+}
+.gallery{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 auto;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(203, 231, 250, 0.931);
+}
+img{
+    box-sizing: border-box;
+    border-radius: 15%;
+    width: 95%;
+    margin: 20px auto;
+    background-size:cover;
+}
+
+/* Phone Portrait and Landscape*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+}
+
+/* Phone Portrait*/
+@media screen and (min-width: 320px) {
+}
+
+/* Phone Landscape*/
+@media screen and (min-width: 480px) {
+.gallery{
+    grid-template-columns:repeat(2,1fr);
+}
+}
+
+/* Tablet Portrait and Landscape*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* Tablet Portrait*/
+@media screen and (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablet Landscape*/
+@media screen and (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktop*/
+@media screen and (min-width: 1224px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Large Desktop*/
+@media screen and (min-width: 1824px) {
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

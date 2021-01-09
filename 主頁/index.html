@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="./scss/styles.css" />
+
+  <title>Home</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="header__logo"><img src="./img/logo.png" alt=""></a>
+
+    <i class="bx bx-menu header__toggle" id="header-toggle"></i>
+
+    <nav class="nav" id="nav-menu">
+      <div class="nav__content bd-grid">
+        <a href="./index.html" class="nav__perfil">
+          <div class="nav__img">
+            <img src="./img/photo.jpg" alt="" />
+          </div>
+
+          <div>
+            <span class="nav__name">Allen</span>
+            <span class="nav__name">Lin</span>
+          </div>
+        </a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link active">Home</a>
+            </li>
+
+            <li class="nav__item dropdown">
+              <a href="#" class="nav__link dropdown__link">About <i class="bx bx-chevron-down dropdown__icon"></i></a>
+
+              <ul class="dropdown__menu">
+                <li class="dropdown__item">
+                  <a href="../生活/生活.html" class="nav__link">生活</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="../小白畫廊/cat.html" class="nav__link">shiro</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav__item dropdown">
+              <a href="#" class="nav__link dropdown__link">TKU demo <i
+                  class="bx bx-chevron-down dropdown__icon"></i></a>
+
+              <ul class="dropdown__menu">
+                <li class="dropdown__item" onclick="change(1)">
+                  <a href="#" class="nav__link">midterm project</a>
+                </li>
+                <li class=" dropdown__item" onclick="change(2)">
+                  <a href=" #" class="nav__link">week14</a>
+                </li>
+                <li class="dropdown__item" onclick="change(3)">
+                  <a href=" #" class="nav__link">week13</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--container-->
+  <div class="container">
+    <div class="content" id="content">
+      <div class="detail">
+        <h1>Hi,I'm ALLEN 立純</h1>
+        <p>
+          這是我的期末網頁作品，包含個人簡介及連結還有一些生活照等等，
+          <br>
+          主頁是參考figma的樣式下去做CSS的調整，社群網頁是使用網路上svg檔作為超連結圖片，
+          <br>
+          我本身對於美感沒有想法，網頁設計在美術上讓我很煩惱，不管怎麼做總是覺得不好看，
+          <br>
+          既使交出去之後，我日後還是會修改這個網頁，使他看起來更好看一點。
+        </p>
+      </div>
+      <div class="link">
+        <ul>
+          <li><a href="https://www.facebook.com/4ll3N0311/"><img src="./img/facebook.svg" alt=""></a> </li>
+          <li><a href="https://www.instagram.com/4ll3n0311/"><img src="./img/Instagram Icon.svg" alt=""></a> </li>
+          <li><a href="https://github.com/208417138"><img src="./img/github-sign.svg" alt=""></a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!--===== MAIN JS =====-->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
